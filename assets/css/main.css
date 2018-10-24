@@ -2669,7 +2669,8 @@ input, select, textarea {
 		}
 
 		#about-me-img {
-			object-position: 0px -69px;
+			/* object-position: -66px -69px; */
+			object-position: center -69px;
 		}
 
 		.image[data-position="25% 25%"] img {
