@@ -2997,6 +2997,7 @@ input, select, textarea {
 
 			ul.faces li .image img {
 				width: 6rem;
+				max-height: 88px;
 			}
 
 		}
