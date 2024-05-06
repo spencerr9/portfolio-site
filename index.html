@@ -91,16 +91,91 @@
 							<div class="content">
 								<header>
 									<!-- <a href="./detailScreenshots.html" ><span class="category">click for screenshots</span></a> -->
-									<h3>REST API Integration</h3>
+									<h3>CAN bus with React.js and Typescript</h3>
 								</header>
 								<p>
 									<ul>
-										<li>Programmed central server to integrate APIs from Acuity in 7shifts to simultaneously schedule clients and staff.</li>
+										<li>Programmed using React/Typescript.</li>
+										<li>Utilizes custom "drag and drop" functionality.</li>
+										<li>Decodes a binary file, parses through it with respect to 17-byte UDS communication protocol, converts back to binary and makes the new file available for download.</li>
+									</ul>
+								</p>
+								<p>This React/Typescript app parses a binary file to extract transfer data from a CAN bus communication log between a dongle and an engine computer. It then converts the data back to binary and provides a download option.<br>
+									<small>*To see this app in action, I can provide the starter file upon request.</small>
+								</p>
+								<ul class="actions">
+									<li><a href="https://ie-can-bus.web.app/" class="button next" target="_blank">Visit the site</a></li>
+									<li><a href="https://github.com/spencerr9/IE-CAN-bus" class="button next" target="_blank" style="background-color: #333">GitHub Repo</a></li>
+								</ul>
+							</div>
+							<div class="image" data-position="center"><img  src="./myImages/IE-CAN-bus-img.png" alt="" /></div>
+						</article>
+						
+						<article class="post style2">
+							<div class="content">
+								<header>
+									<!-- <a href="./detailScreenshots.html" ><span class="category">click for screenshots</span></a> -->
+									<h3>Ownership Page - Figure Financial</h3>
+								</header>
+								<p>
+									<ul>
+										<li>Utilizes Angular with NgRx.</li>
+										<li>Self-referencing design structure with customer input.</li>
+										<li>Users can edit data "inline" using the edit button on each row.</li>
+										<li>Tables become "scrollable" on mobile, with an indicator to the user (see gif). </li>
+									</ul>
+								</p>
+								<p>I was given the responsibility to design a system that could efficiently organize customer input, using a self-referencing structure. Essentially, when a customer filled out ownership information, specific details from this input would automatically cascade into other tables. This allowed users to interact with the data at various levels, ensuring a seamless and consistent flow of information throughout the system.<br>
+								<small>*To demo, go to <a href="https://erc-customer-staging.azurewebsites.net/" target="_blank">Ownership Page</a> > both user/pass are: “spencer.ricks” > click “Test 1” > “Business Questionnaire” > “Ownership”. Interact with the page.</small><br>
+								<small>**I do not have access to this codebase anymore, the experience is subject to change.</small>
+								</p>
+								<ul class="actions">
+									<li><a href="https://erc-customer-staging.azurewebsites.net/" class="button next" target="_blank">Visit the site</a></li>
+									<!-- <li><a href="https://github.com/spencerr9/IE-CAN-bus" class="button next" target="_blank" style="background-color: #333">GitHub Repo</a></li> -->
+								</ul>
+							</div>
+							<div class="image" data-position="center"><img  src="./myImages/ownership-page-trimmed.gif" alt="" /></div>
+						</article>
+
+						<article class="post style2 alt">
+							<div class="content">
+								<header>
+									<!-- <a href="./iceRinkScreenshots.html" ><span class="category">click for screenshots</span></a> -->
+									<h3>Geo-locator - Gladiator</h3>
+								</header>
+								<p>
+									<ul>
+										<li>Utilizes a custom-built Node.js middleware for integration between Shopify and SAP.</li>
+										<li>If the user has location services enabled in the browser, this geo-locator will estimate a zip code/postal code based on their IP address.</li>
+										<li>With the source of truth being SAP, the script would update Shopify product quantites on a location basis twice per day to ensure quantities were in sync.</li>
+									</ul>
+								</p>
+								<p>
+									The goal of this project was to allow users to enter their zip code (or postal code for Canada) and for the online storefronts to automatically display or hide products based on their availability at the nearest fulfillment center. This feature needed to seamlessly integrate with Shopify's product quantites and the client's ERP system, SAP. The solution ensured customers saw only the products they could actually purchase and have delivered from their closest distribution point.<br>
+									<small>*I do not have access to this repo anymore. This experience is subject to change.</small>
+								</p>
+								<ul class="actions">
+									<li><a href="http://www.gladiatorgarageworks.com" target="_blank" class="button next">Visit the site</a></li>
+									<!-- <li><a onclick="window.open('https://github.com/spencerr9/IceRink')" class="button next" style="background-color: #333">GitHub Repo</a></li> -->
+								</ul>
+							</div>
+							<div class="image" data-position="center"><img id="meal-prep" src="./myImages/geo-locator.png" alt="" /></div>
+						</article>
+
+						<article class="post style2">
+							<div class="content">
+								<header>
+									<!-- <a href="./detailScreenshots.html" ><span class="category">click for screenshots</span></a> -->
+									<h3>Scheduler middleware</h3>
+								</header>
+								<p>
+									<ul>
+										<li>Integrates APIs between Acuity and 7shifts to simultaneously schedule staff as a client makes a booking.</li>
 										<li>Central server built utilizing Node.js with Express.js.</li>
 										<li>Constructed Node/Express server from scratch.</li>
 									</ul>
 								</p>
-								<p>The idea is when a user schedules an appointment (on Acuity), the company's staff is automatically notified and scheduled (on 7Shifts). Likewise when an appointment is cancelled or edited.</p>
+								<p>When a user schedules an appointment (on Acuity), the company's staff is automatically notified and scheduled (on 7Shifts). Likewise when an appointment is cancelled or edited.</p>
 								<ul class="actions">
 									<!-- <li><a href="https://www.rockymountaindetail.com" class="button next">Visit the site</a></li> -->
 									<li><a onclick="window.open('https://github.com/spencerr9/SpaceCenterAPIs')" class="button next" style="background-color: #333">GitHub Repo</a></li>
@@ -109,36 +184,17 @@
 							<div class="image" data-position="center"><img  src="./myImages/realtime-api.png" alt="" /></div>
 						</article>
 		
-						<article class="post style2">
-							<div class="content">
-								<header>
-									<a href="./landoLaneScreenshots.html" ><span class="category">click for screenshots</span></a>
-									<h3>Lando Lane Portfolio (work in progress)</h3>
-								</header>
-								<p>
-									<ul>
-										<li>Used React to build the front end for this photographer’s work-in-progress portfolio site. This will be a “serverless” site and all photos will be stored in and called from AWS.</li>
-									</ul>
-								</p>
-								<!-- <p>The idea is when a user schedules an appointment (on Acuity), the company's staff is automatically notified and scheduled (on 7Shifts). Likewise when an appointment is cancelled or edited.</p> -->
-								<ul class="actions">
-									<li><a href="https://landolane-c2286.web.app/#/" class="button next">Visit the site</a></li>
-									<li><a onclick="window.open('https://github.com/spencerr9/LandoLane')" class="button next" style="background-color: #333">GitHub Repo</a></li>
-								</ul>
-							</div>
-							<div class="image" data-position="center"><img  src="./myImages/portrait1.jpg" alt="" /></div>
-						</article>
-		
 						<article class="post style2 alt">
 							<div class="content">
 								<header>
 									<a href="./willowBayScreenshots.html" ><span class="category">click for screenshots</span></a>
 									<h3>Willow Bay Resort</h3>
 								</header>
+								<p>This site was build for Willow Bay Resort using a template with pre-built JavaScript, JQuery, HTML, and CSS. Other services were added to the template, see below bullet points. The site serves to provide information about resort services to the user.</p>
 								<p>
 									<ul>
-										<li>Built a site for the Resort using JavaScript, JQuery, HTML, and CSS, providing information about services to the user.</li>
-										<li>Integrated variable external data sources from Google Maps, Dark Sky, and WebReserv.</li>
+										<li>Users can autonomously book a camper spot or boat rental.</li>
+										<li>Users can find location and weather information directly on the site.</li>
 									</ul>
 								</p>
 								<ul class="actions">
@@ -156,6 +212,12 @@
 									<h3>Jefferson Ice Rink</h3>
 								</header>
 								<p>Built using JavaScript, HTML, and CSS to provide information about business services for Lakeside Rink in Idaho Falls. The site was created from scratch.</p>
+								<p>
+									<ul>
+										<li>Users can digitally sign a waiver using a form.</li>
+										<li>Waivers are sent to the clients email address.</li>
+									</ul>
+								</p>
 								<ul class="actions">
 									<li><a onclick="window.open('https://ice-rink-3df93.web.app/')" class="button next">Visit the site</a></li>
 									<li><a onclick="window.open('https://github.com/spencerr9/IceRink')" class="button next" style="background-color: #333">GitHub Repo</a></li>
@@ -163,6 +225,7 @@
 							</div>
 							<div class="image" data-position="center"><img id="meal-prep" src="./myImages/landing.jpg" alt="" /></div>
 						</article>
+
 						<!-- <article class="post style2">
 							<div class="content">
 								<header>
@@ -197,12 +260,22 @@
 				<!-- Section -->
 					<section class="main" id="skills">
 						<header>
-							<h2>Skills</h2>
+							<h2>Skillset</h2>
 							<!-- <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p> -->
 						</header>
 						<!-- ROW 1 OF SKILLS -->
 						<div class="inner">
 							<ul class="faces">
+								<li>
+									<span class="image"><img src="./myImages/angular.png" alt="" /></span>
+									<h3>Angular</h3>
+									<!-- <p>Ipsum et dolor</p> -->
+								</li>
+								<li>
+									<span class="image"><img src="./myImages/ngrx.svg" alt="" /></span>
+									<h3>NgRx</h3>
+									<!-- <p>Ipsum et dolor</p> -->
+								</li>
 								<li>
 									<span class="image"><img src="./myImages/react-icon.png" alt="" /></span>
 									<h3>React</h3>
@@ -214,9 +287,24 @@
 									<!-- <p>Ipsum et dolor</p> -->
 								</li>
 								<li>
+									<span class="image"><img src="./myImages/vue.png" alt="" /></span>
+									<h3>Vue</h3>
+									<!-- <p>Ipsum et dolor</p> -->
+								</li>
+								<li>
 									<span class="image"><img src="./myImages/nodejs.png" alt="" /></span>
 									<h3>nodejs</h3>
 									<!-- <p>Euismod convallis</p> -->
+								</li>
+								<li>
+									<span class="image"><img src="./myImages/express.png" alt="" /></span>
+									<h3>express</h3>
+									<!-- <p>Ipsum et dolor</p> -->
+								</li>
+								<li>
+									<span class="image"><img src="./myImages/typescript.png" alt="" /></span>
+									<h3>Typescript</h3>
+									<!-- <p>Mauris aliquam</p> -->
 								</li>
 								<li>
 									<span class="image"><img src="./myImages/javascript.png" alt="" /></span>
@@ -233,18 +321,19 @@
 									<h3>css3</h3>
 								</li>
 								<li>
-									<span class="image"><img src="./myImages/Material-UI.png" alt="" /></span>
-									<h3>Material-UI</h3>
+									<span class="image"><img src="./myImages/sass.png" alt="" /></span>
+									<h3>SCSS</h3>
+									<!-- <p>Mauris aliquam</p> -->
+								</li>
+								<li>
+									<span class="image"><img src="./myImages/figma.svg" alt="" style="height: 128px;" /></span>
+									<h3>Figma</h3>
+									<!-- <p>Mauris aliquam</p> -->
 								</li>
 								<li>
 									<span class="image"><img src="./myImages/git.png" alt="" /></span>
 									<h3>Git</h3>
 									<!-- <p>Sed magna etiam</p> -->
-								</li>
-								<li>
-									<span class="image"><img src="./myImages/express.png" alt="" /></span>
-									<h3>express</h3>
-									<!-- <p>Ipsum et dolor</p> -->
 								</li>
 								<li>
 									<span class="image"><img src="./myImages/postgres.png" alt="" /></span>
@@ -257,23 +346,13 @@
 									<!-- <p>Euismod convallis</p> -->
 								</li>
 								<li>
-									<span class="image"><img src="./myImages/photoshop.png" alt="" /></span>
-									<h3>Photoshop</h3>
-									<!-- <p>Mauris aliquam</p> -->
-								</li>
-								<li>
-									<span class="image"><img src="./myImages/indesign.png" alt="" /></span>
-									<h3>Indesign</h3>
-									<!-- <p>Mauris aliquam</p> -->
-								</li>
-								<li>
 									<span class="image"><img src="./myImages/Shopify.png" alt="" /></span>
 									<h3>Shopify</h3>
 									<!-- <p>Mauris aliquam</p> -->
 								</li>
 								<li>
-									<span class="image"><img src="./myImages/sass.png" alt="" /></span>
-									<h3>SCSS</h3>
+									<span class="image"><img src="./myImages/wordpress.png" alt="" /></span>
+									<h3>WordPress</h3>
 									<!-- <p>Mauris aliquam</p> -->
 								</li>
 								<li>
@@ -289,11 +368,6 @@
 								<li>
 									<span class="image"><img src="./myImages/onetrust-logo.jpg" alt="" /></span>
 									<h3>OneTrust</h3>
-									<!-- <p>Mauris aliquam</p> -->
-								</li>
-								<li>
-									<span class="image"><img src="./myImages/figma.svg" alt="" style="height: 128px;" /></span>
-									<h3>Figma</h3>
 									<!-- <p>Mauris aliquam</p> -->
 								</li>
 								<li>
@@ -339,17 +413,22 @@
 										<!-- <span class="category">Lorem ipsum</span> -->
 										<!-- <h3>Finibus et magna</h3> -->
 									</header>
-									<p>Hi, my name is Spencer.</p>
-									<p>I started my professional career in the Finance and Commercial Real Estate sectors. While I excelled, I found that I most enjoyed working on the software that helped my group write appraisal reports. </p>
-									<p>I have taken this unique job experience and paired it with extensive web development training to make myself an asset to my colleagues.</p>
-									<p>My recent Gallup StrengthsFinder test designated my top five strengths as follows. Three of my five strengths are within the "Executing" quadrant, indicating that I find a way to complete the task, whether that's meeting a deadline or implementing a solution.</p>
-									<ul>
-										<li>Restorative</li>
-										<li>Focus</li>
-										<li>Futuristic</li>
-										<li>Significance</li>
-										<li>Consistency</li>
-									</ul>
+									<p>Hi, I'm Spencer.</p>
+									<p>
+										I began my career in the Finance and Commercial Real Estate sectors, where I worked as a commercial real estate appraiser. While I excelled in this field, I found my true passion lay in the software that helped my team create appraisal reports. This realization led me to transition into software development, combining my unique industry experience with a deep interest in technology.
+									</p>
+									<p>
+										Through extensive training and hands-on projects, I've become a skilled software engineer, bringing a unique perspective to my work. My background in real estate and finance allows me to understand the business side of things, while my technical skills enable me to develop effective software solutions.
+									</p>									
+									<p>
+										According to my recent Gallup StrengthsFinder test, my top five strengths are Restorative, Focus, Futuristic, Significance, and Consistency. With three out of five strengths in the "Executing" quadrant, I have a proven ability to meet deadlines and deliver results.
+									</p>
+									<p>
+										In my free time, I enjoy spending time with my family and indulging in my passion for cars, especially behind the wheel.
+									</p>
+									<p>
+										If you're looking for a dedicated professional who can bridge the gap between business and technology, I'd love to connect.
+									</p>
 									<ul class="actions">
 										<!-- <li><a href="generic.html" class="button next">More About Me</a></li> -->
 										<li><a onclick="window.open('https://www.linkedin.com/in/spencerr9')" class="button next">LinkedIn</a></li>

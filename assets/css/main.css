@@ -299,6 +299,9 @@ i {
 p {
 	margin: 0 0 2rem 0;
 }
+p small {
+	font-size: smaller;
+}
 
 h1,
 h2,
@@ -2793,6 +2796,10 @@ input[type="radio"]:focus+label:before {
 	object-position: center center;
 }
 
+#About .post.alt>.content {
+	font-size: 15px;
+}
+
 .image[data-position="25% 25%"] img {
 	-moz-object-position: 25% 25%;
 	-webkit-object-position: 25% 25%;
@@ -3069,6 +3076,7 @@ ul.faces li {
 	padding-left: 0;
 	text-align: center;
 	margin: 2rem;
+	width: 120px;
 }
 
 ul.faces li:first-child {
@@ -3086,7 +3094,8 @@ ul.faces li .image {
 
 ul.faces li .image img {
 	/* border-radius: 100%; */
-	width: 8rem;
+	width: 3rem;
+	max-height: 3rem;
 }
 
 ul.faces li h3 {
@@ -3114,15 +3123,6 @@ ul.faces li p {
 
 }
 
-@media screen and (max-width: 736px) {
-
-	ul.faces li .image img {
-		width: 6rem;
-		max-height: 88px;
-	}
-
-}
-
 @media screen and (max-width: 480px) {
 
 	ul.faces {
@@ -3132,10 +3132,7 @@ ul.faces li p {
 
 	ul.faces li {
 		margin: 2rem;
-	}
-
-	ul.faces li .image img {
-		width: 6rem;
+		width: 90px;
 	}
 
 	ul.faces li h3 {
@@ -3272,8 +3269,6 @@ table.alt tbody tr td {
 .post>.image {
 	-moz-align-self: -moz-stretch;
 	-webkit-align-self: -webkit-stretch;
-	-ms-align-self: -ms-stretch;
-	align-self: stretch;
 	width: 40%;
 	min-height: inherit;
 	border-radius: 4px;
